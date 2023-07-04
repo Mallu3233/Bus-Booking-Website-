@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1584px;
+            height: 37px;
+            position: absolute;
+            top: 13px;
+            left: 8px;
+            z-index: 1;
+        }
+        .auto-style2 {
+            position: absolute;
+            top: 0px;
+            left: 1127px;
+            z-index: 1;
+            width: 115px;
+            height: 34px;
+        }
+    </style>
+</head>
+<body style="height: 46px; width: 1441px;">
+    <form id="form1" runat="server">
+    <div>
+    <header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="auto-style1" style="font-size:24px;background-color:white; ">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<strong> </strong>
+        <a href="Home1.aspx"><strong>HOME</strong></a><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </strong>
+        <a href="LoginP.aspx"><strong>BOOK</strong></a><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </strong>
+        <a href="#gallery"><strong>GALLERY</strong></a><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>
+        <a href="FeedBack.aspx"><strong>FEEDBACK</strong></a><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </strong>
+        <a href="#contact"><strong>CONTACT</strong></a><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+        <asp:Button ID="lbtnlogin"  runat="server" CssClass="auto-style2" Text="Button" OnClick="lbtnlogin_Click" BackColor="White" BorderStyle="None" Font-Bold="True" CausesValidation="False" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="Admin1.aspx"><strong>ADMIN</strong></a>&nbsp;&nbsp;&nbsp;
+    </nav>
+
+    </header>
+    </div>
+        
+        
+          <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
